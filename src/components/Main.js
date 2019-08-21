@@ -1,6 +1,7 @@
 import React from 'react';
 import './Main.css';
 import CardList from './CardList';
+import Form from './Form';
 
 class Main extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class Main extends React.Component {
         <div className="header">
           {this.props.title}
         </div>
+        <Form />
         <CardList />
       </div>
     );
