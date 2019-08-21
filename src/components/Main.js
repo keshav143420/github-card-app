@@ -10,6 +10,12 @@ const testData = [
 ];
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      profiles: testData
+    }
+  }
   render() {
     return (
       <div>
@@ -17,7 +23,7 @@ class Main extends React.Component {
           {this.props.title}
         </div>
         <Form />
-        <CardList profiles={testData} />
+        <CardList profiles={this.state.profiles} />
       </div>
     );
   }
