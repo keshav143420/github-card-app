@@ -10,7 +10,7 @@ class Form extends React.Component {
     event.preventDefault();
     // Axios.get('https://api.github.com/users/keshav143420')
     const resp = await Axios.get(`https://api.github.com/users/${this.state.userName}`);
-    console.log(resp.data);
+    this.props.onSubmit(resp.data);
   }
 
   render() {
