@@ -4,7 +4,7 @@ import Main from './components/Main';
 
 function App() {
   return (
-    <div className="header">
+    <div className="App">
       <Main title="The Github Cards App" />
     </div>
   );
