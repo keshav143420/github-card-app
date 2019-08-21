@@ -1,9 +1,8 @@
 import React from 'react';
+import './Main.css';
 
-function Main(props){
-  return (
-    <h1>{props.title}</h1>
-  );
-}
+const Main = ({title}) => (
+  <div className="header">{title}</div>
+);
 
 export default Main;
